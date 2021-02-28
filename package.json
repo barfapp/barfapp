@@ -4,6 +4,7 @@
   "description": "Feed your furry friends with what they desire the most",
   "main": "index.js",
   "scripts": {
+    "postinstall": "is-ci || husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/barfapp/barfapp/issues"
   },
-  "homepage": "https://github.com/barfapp/barfapp#readme"
+  "homepage": "https://github.com/barfapp/barfapp#readme",
+  "devDependencies": {
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-conventional": "12.0.1",
+    "husky": "5.1.1",
+    "is-ci": "3.0.0",
+    "semantic-release": "17.4.0"
+  }
 }
